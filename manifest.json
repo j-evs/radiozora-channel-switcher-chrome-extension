@@ -1,0 +1,35 @@
+{
+  "name": "RadiOzora channel switcher",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "Use custom hotkeys to switch radiOzora channels from any tab in Chrome",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "browser_action": {
+    "default_title": "RadiOzora channel switcher",
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "radiozora-switch": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+X",
+        "mac": "Command+Shift+X",
+        "linux": "Ctrl+Shift+X"
+      },
+      "description": "Use this hotkey to switch channels on http://radiozora.fm"
+    }
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://radiozora.fm/*"],
+      "js": ["radiozora.js"]
+    }
+  ]
+}

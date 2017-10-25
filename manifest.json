@@ -1,6 +1,6 @@
 {
   "name": "RadiOzora channel switcher",
-  "version": "0.1",
+  "version": "0.2",
   "manifest_version": 2,
   "description": "Use custom hotkeys to switch radiOzora channels from any tab in Chrome",
   "permissions": [

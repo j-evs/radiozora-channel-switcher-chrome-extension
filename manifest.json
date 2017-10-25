@@ -19,7 +19,8 @@
         "mac": "Command+Shift+X",
         "linux": "Ctrl+Shift+X"
       },
-      "description": "Use this hotkey to switch channels on http://radiozora.fm"
+      "description": "Use this hotkey to switch channels on http://radiozora.fm",
+      "global": true
     }
   },
   "background": {
